@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/logoclub.png" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        video {
+            position: fixed;
+            width: 100%;
+        }
+        
+        #first {
+            position: relative;
+        }
+        
+        #contact #form {
+            margin-top: 200px;
+            padding: 10px 10px 10px 10px;
+            margin: 0 auto;
+            box-shadow: 0px 9px 13px 5px;
+            border-radius: 5px;
+        }
+        
+        #contact form input {
+            width: 50%;
+            border-radius: 20px;
+            height: 30px;
+        }
+        
+        #contact form #message {
+            width: 50%;
+            border-radius: 20px;
+        }
+        
+        #contact #form #submit {
+            background: #3b7687;
+            height: 30px;
+        }
+        /*#contact{
+background: white;
+background-size: cover;
+}*/
+        
+        #contact #form {
+            border: 2px solid white;
+            margin: 0 auto;
+            width: 400px;
+            height: 500px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: blanchedalmond;
+            padding-top: 20px;
+            margin-top: 5px;
+            border-radius: 25px;
+            box-shadow: 0px 9px 13px 5px;
+        }
+        
+        #try {
+            margin-top: 45px;
+        }
+        
+        form #button {
+            background-color: rgb(92, 172, 192);
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="contact">
+    <video autoplay loop muted>
+        <source src="images/I&D.mp4" type="video/mp4">
+    </video>
+    <div id="first">
+        <center><img id="try" src="images/logoclub.png" width="100"></center>
+        <center>
+            <h1 style="color: azure;margin-top: 0px; margin-bottom: 0px;">contact us</h1>
+        </center>
+        <div id="form">
+            <form action="connect.php" method="post">
+                <p>
+                    <label for="name">name:&nbsp;&nbsp;</label>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    <label for="name">email:&nbsp;&nbsp;</label>
+                    <input type="email" name="email">
+                </p>
+
+                <label for="name">subject:</label>
+                <input type="text" name="subject">
+                <p>
+                    <label for="name">message:</label>
+                    <textarea id="message" name="message" id="" cols="30" rows="15">
+     </textarea>
+                </p>
+                <p>
+                    <input id="button" type="submit" name="submit" value="send message">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
